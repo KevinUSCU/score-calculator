@@ -30,8 +30,8 @@ function readDataFile(filename) {
     return playerData;
 }
 
-function sumScores(player) {
-
+function sumScores(scores) {
+    return scores.reduce((sum, round) => sum + round, 0);
 }
 
 module.exports = {

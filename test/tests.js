@@ -30,7 +30,7 @@ describe('a readDataFile', function() {
 
 describe('a sumScores', function() {
     it('can sum the total score of a player from multiple rounds', function() {
-        expect(main.sumScores(Sarah)).to.equal(27);
+        expect(main.sumScores([6,9,3,22])).to.equal(40);
     });
 });
 

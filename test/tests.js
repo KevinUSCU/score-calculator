@@ -2,12 +2,24 @@ let chai = require('chai');
 let expect = chai.expect;
 let main = require("../main");
 
-let dataCompare = {
-    Zoe: [4, 5, 8],
-    Bob: [2, 7, 9],
-    Sarah: [10, 9, 8],
-    John: [2, 5, 3]
-}
+let dataCompare = [
+    {
+        name: "Zoe",
+        scores: [4, 5, 8]
+    },
+    {
+        name: "Bob",
+        scores: [2, 7, 9]
+    },
+    {
+        name: "Sarah",
+        scores: [10, 9, 8]
+    },
+    {
+        name: "John",
+        scores: [2, 5, 3]
+    }
+];
 
 
 describe('a readDataFile', function() {

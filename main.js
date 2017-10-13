@@ -2,10 +2,18 @@ const fs = require('fs');
 const Papa = require('papaparse');
 
 function getWinner(filename) {
-    let playerData = readDataFile(filename);
-    playerData.forEach(function(player) {
-        
-    }, this);
+    const playerData = readDataFile(filename);
+    if (playerData.length === 0) return null;
+    let winner = playerData[0].name;
+    let highScore = sumScores(playerData[0].scores);
+    for (let i = 1; i < playerData.length; i++) {
+        let score = sumScores(playerData[i].scores);
+        if (score > highScore) {
+            highScore = score;
+            winner = playerData[i].name;
+        }
+    }
+    return winner;
 }
 
 function readDataFile(filename) {
@@ -27,6 +35,7 @@ function readDataFile(filename) {
         }
         return player;
     });
+    // Return our array containing all players and their scores
     return playerData;
 }
 

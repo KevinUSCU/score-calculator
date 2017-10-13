@@ -35,7 +35,7 @@ describe('a sumScores', function() {
 });
 
 describe('a getWinner', function() {
-    it('can log a winner to the console', function() {
-        expect(main.getWinner("../scores.txt")).to.equal("Sarah");
+    it("can return the winning player's name", function() {
+        expect(main.getWinner("./scores.txt")).to.equal("Sarah");
     });
 });

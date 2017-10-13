@@ -1,0 +1,23 @@
+{
+  "name": "score-calculator",
+  "version": "1.0.0",
+  "description": "Sum scores from a test file and return the highest scoring player.",
+  "main": "main.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KevinUSCU/score-calculator.git"
+  },
+  "author": "Kevin Springer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KevinUSCU/score-calculator/issues"
+  },
+  "homepage": "https://github.com/KevinUSCU/score-calculator#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1"
+  }
+}

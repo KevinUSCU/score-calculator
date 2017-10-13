@@ -24,18 +24,18 @@ let dataCompare = [
 
 describe('a readDataFile', function() {
     it('can read player data in from a file to an object', function() {
-        expect(main.readDataFile("./scores.txt").to.equal(dataCompare));
+        expect(main.readDataFile("./scores.txt")).to.deep.equal(dataCompare);
     });
 });
 
 describe('a sumScores', function() {
     it('can sum the total score of a player from multiple rounds', function() {
-        expect(main.sumScores(Sarah).to.equal(27));
+        expect(main.sumScores(Sarah)).to.equal(27);
     });
 });
 
 describe('a getWinner', function() {
     it('can log a winner to the console', function() {
-        expect(main.getWinner("../scores.txt").to.equal("Sarah"));
+        expect(main.getWinner("../scores.txt")).to.equal("Sarah");
     });
 });

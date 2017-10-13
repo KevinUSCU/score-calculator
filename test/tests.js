@@ -24,7 +24,7 @@ let dataCompare = [
 
 describe('a readDataFile', function() {
     it('can read player data in from a file to an object', function() {
-        expect(main.readDataFile("../scores.txt").to.equal(dataCompare));
+        expect(main.readDataFile("./scores.txt").to.equal(dataCompare));
     });
 });
 

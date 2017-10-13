@@ -1,5 +1,5 @@
 let chai = require('chai');
-let expect = expect.chai;
+let expect = chai.expect;
 let main = require("../main");
 
 let dataCompare = {
